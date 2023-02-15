@@ -1,66 +1,108 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# E-commerce con Laravel 9
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Resumen
 
-## About Laravel
+En este proyecto se realizo un E-Commerce funcional con Laravel 9 mediante la utilizacion de Rutas, Controles, Modelos, Migraciones, Api's de metodos de pago y Librerias para filtrado de informacion. Las tecnologias utilizadas fueron (Laravel 9, PHP, MySql y CSS)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Principales Librerias y Api's Utilizadas
+- Livewire
+- Api de MercadoPago
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Principales tareas y funcionalidades
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Sistema de registro y logueo
+- Sistema de Filtrado de productos
+- Render Random de Productos
+- Lista de Favoritos (Agregar y eliminar)
+- Carrito de Compras (Agregar y eliminar)
+- Cambio de cantidades de un producto desde la vista del carrito
+- Pagina con informacion detallada de cada producto
+- Checkout con api de MercadoPago
 
-## Learning Laravel
+#
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Pagina de Inicio
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_31_42](https://user-images.githubusercontent.com/111323259/219030002-6dfc6b01-d276-4bc0-8968-bf5ea194a6c2.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Una vez logueado se ve la siguente pagina con 2 anuncios y una seccion de productos destacados que va cambiando de forma aleatoria.
 
-## Laravel Sponsors
+https://user-images.githubusercontent.com/111323259/219030265-5e09df23-6c35-40e1-a046-4f5b9fe82e75.mp4
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#
 
-### Premium Partners
+## Pagina de "Collections"
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+https://user-images.githubusercontent.com/111323259/219030635-2044c89c-dc02-460b-a716-8b20ea2b6f3b.mp4
 
-## Contributing
+- Esta es una seccion de la pagina dedicada a los anuncios del sitio con links que redirigen directamente al shop donde se veran todos los productos disponibles
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#
 
-## Code of Conduct
+## Pagina de "Shop"
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_33_15](https://user-images.githubusercontent.com/111323259/219030814-a865c0fd-d7af-41b2-9cf7-09cf01e05033.png)
 
-## Security Vulnerabilities
+- En esta pagina se pueden visualizar todos los productos ademas de una casilla a la derecha con un sistema de filtrado hecho con la libreria LiveWire de Laravel
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_33_35](https://user-images.githubusercontent.com/111323259/219031144-88459471-eff9-49ce-85de-539c3712a8b2.png)
 
-## License
+### Video Mostrando su funcionamiento
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+https://user-images.githubusercontent.com/111323259/219031240-decaec54-1359-4804-b008-630646d67e62.mp4
+
+#
+
+## Favoritos
+
+- Tambien tenemos la posibilidad de agregar los productos que mas te gusten a una lista de favoritos a la cual podras acceder mediante el corazon ubicado en la barra de navegacion.
+
+https://user-images.githubusercontent.com/111323259/219031879-3c5301e4-c104-4d60-86f5-da26315f9d7f.mp4
+
+- Una vez alli podras tanto agregar ese producto al carrito como eliminarlo de la lista de Favoritos
+
+### Proceso de agregado de un elemento a la lista de Favoritos
+
+https://user-images.githubusercontent.com/111323259/219032034-04562438-694c-4f6e-8eee-8a4636267e90.mp4
+
+#
+
+## Info de los Productos
+
+- Tambien tenemos la posibilidad de ver los detalles y la informacion de un producto que eligamos, esto de puede lograr al precionar el titulo del producto en la pagina de "Shop" o al precionar el boton de "More Info" en la pagina de inicio.
+
+https://user-images.githubusercontent.com/111323259/219032879-e5a5db0a-d8c2-4b58-8d9a-962303860bf7.mp4
+
+- Aca tendremos la posibilidad de agregar el producto al carrito.
+
+#
+
+##Carrito 
+
+- A este podremos acceder desde cualquier parte de la pagina simplemente precionando el carrito en el margen superior derecho de la barra de navegacion
+
+https://user-images.githubusercontent.com/111323259/219033183-e682a15d-1caa-45aa-971a-dc30a39d54aa.mp4
+
+#
+
+### Checkout
+
+- Una vez en el carrito podremos presionar el boton de finalizar compra y se abrira un modal en el cual podremos seguir con el proceso de pago
+
+https://user-images.githubusercontent.com/111323259/219033308-b0459077-b89c-4bc0-b764-bd727ef3a74b.mp4
+
+- Una vez elegido el metodo de pago e introducido los datos necesario (Targeta de credito, debito, DNI) ya podremos elegir la cantidad de cuotas con las que queremos realizar la compra
+
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_38_20](https://user-images.githubusercontent.com/111323259/219033626-a668098d-cd64-4bf3-9950-17ae1b7b2735.png)
+
+- Despues de elegir la cuotas tendremos un resumen de la compra con los datos ingresados y el monto a pagar, aqui podremos porfin terminar la compra presionando el boton pagar
+
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_38_35](https://user-images.githubusercontent.com/111323259/219033995-7e05ee33-644a-4c67-99b8-4af28f43518f.png)
+
+- Finalmente en caso de que este todo correcto nos mostrara el siguiente modal con el mensaje de que la compra se ha hecho satisfactoriamente.
+
+![Laravel E-Commerce - Google Chrome 15_2_2023 09_38_48](https://user-images.githubusercontent.com/111323259/219034332-42b50e73-0e7f-436d-9360-581cfe79f7cd.png)
+
+# 
+
+## Todos los derechos reservados &copy; Lucas Abbona 2023
